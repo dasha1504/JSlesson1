@@ -8,7 +8,52 @@
 </head>
 <body>
     <script>
-        
+        //First ex
+        let num1 = Number(prompt('Input first number'));
+        let num2 = Number(prompt('Input second number'));
+        if (num1 <= 1 & num2>=3) {
+            alert('Success');
+        } else if (num1 > 1 && num2>=3){
+            alert('First number more than 1');
+        }
+        else if (num1 <= 1 && num2 < 3){
+            alert('Second number less than 3');
+        }
+        else {
+            alert('All bad');
+        }
+
+        //Second ex
+        let test = true;
+        (test === true) ? console.log('+++'):console.log('---');
+
+        //Third ex
+         let day = prompt('Input day from 1 to 31');
+         if(day <=10 && day>=1){
+            alert('1 decade of the month');
+         }
+         else if (day<= 20 && day>10){
+            alert('2 decade of the month');
+         }
+         else if (day>20 && day<=31){
+            alert('3 decade of the month');
+         }
+         else{
+            alert('NUMBER FROM 1 TO 31');
+         }
+
+         //Fourth ex
+         let num = prompt('Input your number');
+         let units = num%10;
+         num = num/10 - units/10;
+         let tens = num%10;
+         num = num/10 - tens/10;
+         let hundreds = num%10;
+         alert(`In your number ${hundreds} hundreds, ${tens} tens and ${units} units`)
+
+
+
+
     </script>
 </body>
 </html>
