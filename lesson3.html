@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1 ex.
+        function Cubed(n) {
+            return n**3;
+        }
+        console.log(Cubed(2)+Cubed(4));
+
+
+        //2 ex.
+        function Salary(n) {
+            if (isNaN(n) ) {
+                alert("Input NUMBER");
+                
+            } else {
+                return alert(`Salary without tax ${n*0.87}`);
+            }
+        }
+        let x = prompt("Input salary");
+        Salary(x);
+        
+        
+        //3 ex.
+        function Max(a, b, c){
+            let max = a;
+            if(b>max){
+                max = b;
+            }
+           if(c>max){
+                max = c;
+            }
+            return max;
+        }
+        let num1 = Number(prompt("Input 1num"));
+        let num2 = Number(prompt("Input 2num"));
+        let num3 = Number(prompt("Input 3num"));
+        alert(`Maximum - ${Max(num1, num2, num3)}`)
+
+
+        //4ex.
+        function Sum(a, b) {
+            return a+b;
+        }
+        function Min(a, b) {
+                let max = a;
+                let min = b;
+                if (b > a) {
+                    max = b;
+                    min = a;
+                }
+                return max - min;
+            }
+        function Mult(a, b){
+            return a*b;
+        }   
+        function Del(a, b) {
+            return a/b;
+        }
+        alert(Sum(1, 2));
+        alert(Min(5, 1));
+        alert(Mult(2, 3));
+        alert (Del(10, 5));
+    </script>
+</body>
+</html>
