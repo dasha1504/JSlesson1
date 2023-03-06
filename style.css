@@ -1,0 +1,40 @@
+#videoPlayer {
+    width: 800px;
+      
+}
+ 
+#video {
+    width: 100%;
+    
+}
+ 
+.video-track {
+    height: 5px;
+    width: 100%;
+    background-color: blue;
+}
+ 
+.timeline {
+    height: 5px;
+    width: 0;
+    background-color: #58b4ff;
+}
+ 
+.buttons {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: black;
+       
+}
+.play, .pause, .rewind, .forward{
+    background-color: #F25822;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    margin-right: 27px;
+    margin-bottom: 103px;
+    padding: 15px;
+
+}
