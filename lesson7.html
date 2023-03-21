@@ -37,10 +37,8 @@
         sectionForNewLink.insertAdjacentHTML("afterend", newLink);
         document.querySelector('#dropdownMenuButton').setAttribute('id', 'superDropdown');
         document.querySelector('[aria-labelledby = "dropdownMenuButton"]').dataset.dd = 3;
-        const deleteAtr = document.querySelector('.dropdown-toggle');
-        deleteAtr.removeAttribute('type');
-      
-        
+        document.querySelector('.dropdown-toggle').removeAttribute('type');   
+             
         
         
 
